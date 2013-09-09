@@ -121,8 +121,10 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin.py documentation:
     # 'django.contrib.admindocs',
-    'ServiceDesk',
     'south',
+    'categories',
+    'categories.editor',
+    'ServiceDesk',
     'helpdesk',
     'inventory',
 )

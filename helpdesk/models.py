@@ -32,8 +32,8 @@ class Incident(models.Model):
     #department = models.ForeignKey()
 
     incident_location = models.ForeignKey('IncidentLocation')
-    category = models.ForeignKey('Category')
-    subcategory = models.ForeignKey('SubCategory')
+    category = models.ForeignKey('categories.Category')
+    #subcategory = models.ForeignKey('SubCategory')
 
     subject = models.CharField(max_length=128)
     description = models.TextField()
@@ -50,6 +50,6 @@ class IncidentLocation(models.Model):
 class Category(models.Model):
     name = models.CharField(max_length=128)
 
-class SubCategory(models.Model):
-    name = models.CharField(max_length=128)
-    category = models.ForeignKey('Category')
+#class SubCategory(models.Model):
+#    name = models.CharField(max_length=128)
+#    category = models.ForeignKey('Category')
