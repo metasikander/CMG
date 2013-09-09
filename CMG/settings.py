@@ -123,6 +123,8 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'ServiceDesk',
     'south',
+    'helpdesk',
+    'inventory',
 )
 
 # A sample logging configuration. The only tangible logging

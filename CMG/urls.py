@@ -10,8 +10,8 @@ urlpatterns = patterns('',
     # url(r'^CMG/', include('CMG.foo.urls')),
 
     # Uncomment the admin.py/doc line below to enable admin.py documentation:
-    url(r'^admin.py/doc/', include('django.contrib.admindocs.urls')),
+    #url(r'^admin.py/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin.py:
-    url(r'^admin.py/', include(admin.site.urls)),
+    url(r'^admin/', include(admin.site.urls)),
 )
